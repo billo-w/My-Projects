@@ -9,7 +9,7 @@ cryptocompare.cryptocompare._set_api_key_parameter(API_KEY)
 
 class CryptoPrice:
     def __init__(self):
-        self.api_key = None
+        self.api_key = API_KEY
         self.selected_cryptos = []
 
     def get_api_key(self):
