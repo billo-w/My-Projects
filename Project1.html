@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+<!--The style of each section of the website by CSS-->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8e7e7;
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .intro {
+            border-radius: 15px;
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .intro p {
+            display: inline-block;
+            padding: 10px 20px; /* Adjust padding for better alignment */
+            border: 2px solid transparent;
+            animation: border-animation 4s infinite alternate;
+        }
+        @keyframes border-animation {
+        0% {
+            border-color: transparent;
+            }
+        25% {
+            border-color: #333 transparent transparent transparent;
+            }
+        50% {
+            border-color: #333 #333 transparent transparent;
+        }
+        75% {
+            border-color: #333 #333 #333 transparent;
+        }
+        100% {
+            border-color: #333 #333 #333 #333;
+        }
+        }
+        .projects, .contact {
+            border-radius: 15px;
+            padding: 60px;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        .skills {
+            border-radius: 15px;
+            padding: 60px;
+            width: 100%;
+            background: #ffff;
+            margin-bottom: 20px;
+        }
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        .project-item li{
+            margin-bottom: 60px;
+        }
+        .project-item h3{
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .Project1Image {
+            text-align: center;
+            margin-bottom: 40px;
+            border: 5px solid black;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .skill-item {
+            margin-bottom: 60px;
+        }
+        form input, form textarea, form button {
+            display: block;
+            margin-bottom: 10px; 
+        }
+        .circle-border {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .circle-border::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        .circle-border h1 {
+            position: relative;
+        }
+        .projectsSubHeading {
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 5px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="circle-border">
+        <h1>Belal Waw</h1>
+    </div>
+</header>
+
+<!--Define the contents of the website by a class to add css styling to each seperate one-->
+
+<div class="container">
+
+    <section class="intro"> 
+        <p>Hello there, welcome to my portfolio website.</p>
+    </section>
+
+    <section class="projectsSubHeading">
+        <h2>Projects</h2>
+    </section>
+
+    <div class="content">
+        <section class="projects">
+            <div class="project-item">
+                <h3>Crypto Currency Checker</h3>
+                <div class ="Project1Image">
+                    <img src="Images/Screenshot 2024-05-29 123551.png" alt="CryptoScreenshot">
+                </div>
+            <p> <ul>
+                <li>Collaborated on a Python project for real-time currency values.</li>
+                <li>Utilised Python, PySimpleGUI, and CryptoCompare.</li>
+                <li>Resolved graphical user interface bugs through troubleshooting.</li>
+                <li>Successfully launched the Crypto Price Checker app.</li>
+                <li>Code is available on <a href="https://github.com/billo-w/My-Projects/blob/main/CryptoPriceChecker.py">GitHub</a></li>
+            </ul></p>
+            </div>
+
+        <!-- Add more projects as needed -->
+
+        </section>
+
+        <section class="skills">
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_object_oriented_transparent_45x45.png">
+                <p>Object Oriented Programming</p>
+            </div>
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_problem_solving_transparent_45x45.png">
+                <p>Problem Solving</p>
+            </div>
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_python_transparent_45x45.png">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_teamwork_transparent_45x45.png">
+                <p>Teamwork</p>
+            </div>
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_api_transparent_45x45.png">
+                <p>API and GUI Implementation</p>
+            </div>
+            <div class="skill-item">
+                <img src="Images/A_small_simple_icon_representing_quick_learning_transparent_45x45.png">
+                <p>Quick Learning</p>
+            </div>
+
+            <!-- Add more skills as needed -->
+
+        </section>
+    </div>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>To contact me, complete the form below:</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="9c9ac3fe-9139-450b-90db-bed662b151b7">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit">Submit Form</button>
+            <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">I agree to the <a href="privacy-policy.html">Privacy Policy</a></label>
+        
+        </form>
+        
+    </section>
+</div>
+
+</body>
+</html>
+
